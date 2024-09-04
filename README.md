@@ -1,4 +1,32 @@
-# Title to be added
+# Deep learning-based patient note-identification using clinical documents
+This repository contains the code and resources for _Deep learning-based patient note-identification using clinical documents_. The project aims to address the challenge of patient-note identification, where we try to accurately associate a single clinical note with its corresponding patient. This task highlights the importance of learning robust patient-level representations. We propose different embedding models and experiment with various aggregation techniques to produce robust patient-level representations. Our models are implemented using PyTorch. 
+
+
+## Repository Structure
+
+
+```bash
+project-root/
+│
+├── data_processing.py          # Script to obtain and preprocess the dataset
+│
+├── data/
+│   ├── raw/                    # Original dataset files and CSVs
+│   ├── processed/              # Files with embeddings
+│
+├── models/                     # Embedding models to learn representations
+│
+├── patient_repr_aggregation/   # Codes for learning patient embeddings
+│ 
+├── training.py                 # Script to train and evaluate the classifier
+│ 
+├── results/                    # Results from model evaluations
+│
+├── .gitattributes              # Configures repository attributes like line endings
+├── .gitignore                  # Specifies files and directories to ignore
+└── README.md                   # Project description and instructions
+
+```
 
 ## Requirements
 
@@ -26,11 +54,24 @@ $ conda install -y tqdm gensim nltk
 
 ### Usage
 
+**Data Processing:**
+*Run the data processing script to prepare the dataset.*
+```bash
 
+python data_processing.py
+```
+**Model Training:**
 
-  
- 
-  
+*Train and evaluate the classifier using the processed data.*
+
+```bash
+python training.py
+```
+
+**Results:**
+
+*The results of the model evaluation will be saved in the results/ directory.*
+
   
 ## Files and Folders
 
