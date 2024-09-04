@@ -42,7 +42,7 @@ MIMIC-III database analyzed in the study is available on PhysioNet repository. H
 ### Installing the Dependencies
 Install Anaconda (or miniconda to save storage space).
 
-Then, create a conda environement (for example stay-analogy) and install the dependencies, using the following commands:
+Then, create a conda environement (for example patient_repr) and install the dependencies, using the following commands:
 
 ```bash
 $ conda create --name patient_repr python=3.9
@@ -55,6 +55,7 @@ $ conda install -y tqdm gensim nltk
 ### Usage
 
 **Data Processing:**
+
 *Run the data processing script to prepare the dataset.*
 ```bash
 
