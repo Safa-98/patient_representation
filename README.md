@@ -36,8 +36,9 @@ $ conda install -y tqdm gensim nltk
 
 - `data_processing.py`: contains clinical notes preprocessing steps to create final datatset
 - `training.py`: contains the training and evaluate code of our classifiers
+- **`data` folder**: contains raw and processed datasets
 - **`models` folder**: contains all embedding models used to learn document-level representation
 - **`patient_repr_aggregation` folder**: contains all codes used to experiment with different aggregation methods to learn patient-level representations
-
+- **`results` folder**: contains the results obtain by our classifier
 
  
