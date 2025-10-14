@@ -70,6 +70,7 @@ def process_dataset(input_csv, tokenizer, bert_model):
 
 if __name__ == "__main__":
     tokenizer, bert_model = load_model()
+    bert_model.eval()
     
     # Path to the dataset CSV file
     input_csv = 'data/raw/physician_dataset.csv'
